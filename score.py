@@ -11,15 +11,19 @@ class Score():
         self.draw = draw
         self.lose = lose
 
+    #Ne prends rien en entrée, renvoie un string pour afficher l'historique de jeu
     def __str__(self):
         return self.win + " Wins - "+ self.draw + "Draws - " + self.lose + "Loses"
     
-    def setWin(s):
-        s.win = s.win+1
+    #Ne prends rien en entrée, incrémente de 1 l'attribut win d'un objet Score
+    def addWin(self):
+        self.win = self.win+1
 
-    def setDraw(d):
-        s.draw = s.draw+1
+    #Ne prends rien en entrée, incrémente de 1 l'attribut draw d'un objet Score
+    def addDraw(self):
+        self.draw = self.draw+1
 
-    def setLose(d):
-        s.lose = s.lose+1
+    #Ne prends rien en entrée, incrémente de 1 l'attribut lose d'un objet Score
+    def addLose(self):
+        self.lose = self.lose+1
         
